@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> PFSD PROJECT</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+</head>
+<body bgcolor="lightgrey">
+
+
+<h2 align="center"> Student Academics</h2>
+<a href ="{% url 'home' %}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'about' %}">About</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'login' %}">Login</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'contact' %}">Contact Us</a>&nbsp;&nbsp;&nbsp;
+
+<br><br>
+
+{% block 'body' %}
+
+<p> I am in home page </p>
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

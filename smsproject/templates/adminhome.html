@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> PFSD PROJECT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body bgcolor="lightgrey">
+
+
+<h2 align="center"> Student Academics</h2>
+<a href ="{% url 'adminhome' %}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href ="">Change Password</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'viewstudents' %}">Student</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'viewfaculty' %}">Faculty</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'viewcourses' %}">Course</a>&nbsp;&nbsp;&nbsp;
+<a href ="{% url 'adminlogout' %}">Logout</a>&nbsp;&nbsp;&nbsp;
+
+<br><br>
+
+{% block 'body' %}
+
+<p> I am in Admin home page </p>
+
+{% endblock %}
+
+
+
+
+
+</body>
+</html>
